@@ -1,0 +1,90 @@
+.header-color{
+background: #3C3B3F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.landing-grid{
+background: #3E5151;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.avatar{
+  width:200px;
+  height:200px;
+  display:block;
+  margin:auto;
+  border-radius: 50%;
+}
+.banner-text{
+  background:black;
+  opacity: 0.8;
+  margin:auto;
+  border-radius: 10px;
+  width:80%;
+  text-align: center;
+}
+.banner-text hr{
+  border-top: 5px dotted white;
+  width:60%;
+  margin:auto;
+}
+.banner-text h1{
+  color:white;
+}
+.banner-text p{
+  color: white;
+}
+.social-links{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+.social-links i{
+  font-size: 5em;
+  color:white;
+}
+.displayProjects{
+  display:flex;
+  justify-content: space-between;
+}
+/*contact page css*/
+.contact-body{
+  margin:auto;
+  position: fixed;
+  width:100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+}
+.contact-grid{
+  text-align: center;
+  justify-content: center;
+  background: white;
+  width: 80%;
+  height: 550px;
+  color: black;
+  margin-bottom: 20px;
+}
+.contact-grid h1{
+  font-family: 'Anton', sans-serif;
+}
+  .contact-grid p{
+    font-family: 'Oxygen' ,sans-serif;
+    font-weight: bold;
+  }
+  .contact-grid hr{
+    border-top:5px dotted black;
+    width:50%;
+    margin: auto;
+  }
+.contact-list i{
+  font-size: 33px;
+  padding-right: 2em;
+}
+
+/*Resume page css*/
+.resume-right-col{
+  background: #27221F;
+  color:white;
+}
