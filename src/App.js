@@ -8,8 +8,9 @@ class App extends Component {
   render() {
     return (
       <div className="demo-big-content">
-    <Layout>
-        <Header className="header-color" title={<Link style={{textDecoration:'nnone',color:'white'}} to="/">My Portfolio</Link>} scroll>
+      <div className="color"></div>
+    <Layout style={{background: 'url(https://blogsimages.adobe.com/dreamweaver/files/2015/06/window-optimized-700x375.png) center / cover'}}>
+        <Header transparent  id="mainheader"  className="header-color" style={{color: 'red',position:'fixed'}} title={<Link style={{textDecoration:'none',color:'white'}} to="/">My Portfolio</Link>} scroll>
             <Navigation>
                 <Link to="/resume">Resume</Link>
                 <Link to="/aboutme">About me</Link>
@@ -17,7 +18,7 @@ class App extends Component {
                 <Link to="/contact">Contact me</Link>
             </Navigation>
         </Header>
-        <Drawer title="Title">
+        <Drawer title="Title" style={{position:'fixed'}}>
             <Navigation>
             <Link to="/resume">Resume</Link>
             <Link to="/aboutme">About me</Link>
@@ -25,7 +26,7 @@ class App extends Component {
             <Link to="/contact">Contact me</Link>
             </Navigation>
         </Drawer>
-        <Content>
+        <Content style={{marginTop:'100px'}}>
             <div className="page-content" />
             <Main/>
         </Content>

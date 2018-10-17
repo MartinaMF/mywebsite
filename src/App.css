@@ -1,12 +1,52 @@
+html {
+
+}
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif;
+}
+.nav-colored { background-color:#000; }
+.nav-transparent { background-color:transparent;}
+.blurimg{
+  background:#000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
+  position: fixed;
+  left:0;
+  right: 0;
+  top:0;
+  height: 700px;
+  z-index: -1;
+  filter: blur(5px);
+  opacity: 0.5;
+}
 .header-color{
-background: #3C3B3F;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .landing-grid{
-background: #3E5151;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.color{
+    height:300px;
+    width:70%;
+    background-color:black;
+    position:fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top:300px;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+}
+.banner-text{
+  height:300px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  position:fixed;
+  top:300px;
+  width:80%;
+  text-align:center;
+  z-index:1;
 }
 .avatar{
   width:200px;
@@ -14,14 +54,6 @@ background: linear-gradient(to left, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Fi
   display:block;
   margin:auto;
   border-radius: 50%;
-}
-.banner-text{
-  background:black;
-  opacity: 0.8;
-  margin:auto;
-  border-radius: 10px;
-  width:80%;
-  text-align: center;
 }
 .banner-text hr{
   border-top: 5px dotted white;
@@ -85,6 +117,7 @@ background: linear-gradient(to left, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Fi
 
 /*Resume page css*/
 .resume-right-col{
-  background: #27221F;
+  padding:50px;
+  border-radius:50px;
   color:white;
 }

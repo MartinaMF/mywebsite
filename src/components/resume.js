@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Grid, Cell} from 'react-mdl';
 import Education from './education.js';
 import Skills from './skills.js';
+import Certifications from './certifications.js'
  class Resume extends Component{
    render(){
      return(
@@ -9,11 +10,6 @@ import Skills from './skills.js';
           <Grid>
           <Cell col={4}>
           <div style={{textAlin:'center'}}>
-          <img
-          src="https://i2.wp.com/sprysquared.com/wp-content/uploads/2017/12/female-avatar-378x470.jpg?ssl=1"
-          alt="avatar"
-          style={{height:'200px'}}
-          />
           </div>
           <h2 style={{paddingTop:'2em'}}>Martina Faragalla</h2>
           <h4 style={{color:'grey'}}>Web Developer</h4>
@@ -42,7 +38,8 @@ import Skills from './skills.js';
             schoolDescription="information Technology department"
             />
             <hr style={{borderTop:'5px solid #e22947',width:'70%', margin:'auto'}}/>
-            <h2>Experience</h2>
+            <h2>Certifications</h2>
+            <Certifications />
             <hr style={{borderTop:'5px solid #e22947',width:'70%',margin:'auto'}}/>
             <h2>Skills</h2>
             <Skills
