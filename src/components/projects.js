@@ -32,10 +32,11 @@ import {Dialog,DialogTitle,DialogContent,DialogActions,Textfield} from 'react-md
        if(this.state.JQuaryProjects.length>=1){
          const projects = this.state.JQuaryProjects.map((item,i)=>
          <Projectdetails
-         projectName={item.projectname}
+         projectName={item.projectname.toUpperCase()}
          githubLink={item.githubLink}
          codepenLink={item.codepenLink}
          LivedemoLink={item.LivedemoLink}
+         backgroundImage=''
          />)
            return(<div className="displayProjects">
             {projects}
@@ -47,10 +48,11 @@ import {Dialog,DialogTitle,DialogContent,DialogActions,Textfield} from 'react-md
        if(this.state.JavaScriptProjects.length>=1){
          const projects = this.state.JavaScriptProjects.map((item,i)=>
          <Projectdetails
-         projectName={item.projectname}
+         projectName={item.projectname.toUpperCase()}
          githubLink={item.githubLink}
          codepenLink={item.codepenLink}
          LivedemoLink={item.LivedemoLink}
+         backgroundImage='https://uploads.getpop.org/wp-content/uploads/2017/12/js.png'
          />)
            return(<div className="displayProjects">
             {projects}
@@ -62,10 +64,11 @@ import {Dialog,DialogTitle,DialogContent,DialogActions,Textfield} from 'react-md
        if(this.state.ReactProjects.length>=1){
          const projects = this.state.ReactProjects.map((item,i)=>
          <Projectdetails
-         projectName={item.projectname}
+         projectName={item.projectname.toUpperCase()}
          githubLink={item.githubLink}
          codepenLink={item.codepenLink}
          LivedemoLink={item.LivedemoLink}
+         backgroundImage='https://uploads.getpop.org/wp-content/uploads/2017/12/js.png'
          />)
            return(<div className="displayProjects">
             {projects}
@@ -109,18 +112,20 @@ import {Dialog,DialogTitle,DialogContent,DialogActions,Textfield} from 'react-md
      return(
        <div className="tabs">
        <Tabs activeTap={this.state.activeTap} onChange={(tabId)=> this.setState({activeTap:tabId})}>
-       <Tab>jQuary</Tab>
-       <Tab>javascript</Tab>
-       <Tab>react</Tab>
+       <Tab>API projects</Tab>
+       <Tab>javascript/jQuary projects</Tab>
+       <Tab>react projects</Tab>
        </Tabs>
-        <section>
-        <div className="content">{this.toggleCategories()}</div>
+        <section style={{marginTop:'30px'}}>
+        {this.toggleCategories()}
         </section>
-        <Button colored="true" onClick={this.handleOpenDialog} raised ripple>Add New Project</Button>
+        <div style={{marginLeft:'40%',marginTop:'100px',color:'white'}}>
+        <Button colored="true" className='addnewbutton' onClick={this.handleOpenDialog} raised ripple>Add New Project</Button>
+        </div>
         <Dialog open={this.state.openDialog}>
            <DialogTitle>Add New Project</DialogTitle>
            <DialogContent>
-           <Textfield
+           <Textfield required
               onChange={(event) => {this.setState({projectName:event.target.value})}}
               value={this.state.projectName}
               label="Add Project Name..."

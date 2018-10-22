@@ -2,8 +2,8 @@ import React,{Component} from 'react';
 import {Tabs,Tab,section, Grid, Cell,Card,CardText, CardTitle, CardActions, Button, CardMenu, IconButton} from 'react-mdl';
 function Projectdetails (props){
   return(
-    <Card shadow={0} style={{width: '220px', height: '220px', margin: 'auto'}}>
- <CardTitle expand style={{color: '#fff', background: 'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png) center / cover'}}>Update</CardTitle>
+    <Card className="projectcard" shadow={0} style={{width: '20%', height: '25%', margin: 'auto'}}>
+ <CardTitle expand style={{backgroundImage:props => `url(${props.backgroundImage})`,backgroundSize:'cover',backgroundPosition: 'center'}}><h5>{props.projectName}</h5></CardTitle>
  <CardText>
     <p>{props.projectName}</p>
  </CardText>

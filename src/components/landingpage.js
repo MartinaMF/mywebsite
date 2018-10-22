@@ -13,8 +13,8 @@ import {Grid, Cell} from 'react-mdl'
             </Cell>
 
             <div className="banner-text">
-            <h3 style={{color:'white',fontFamily: 'Ubuntu, sans-serif'}}>Martina faragalla</h3>
-            <h1>Full-stack web developer</h1>
+            <h3 style={{color:'white',fontFamily: 'Ubuntu, sans-serif',letterSpacing:'5px'}}>Martina faragalla</h3>
+            <h1 style={{fontFamily:'Play'}}>Full-stack JavaScript developer</h1>
             <hr/>
             <p>HTML5/css3 | Bootstrap | JavaScript | React | Redux | NodeJs | Express | MangoDB</p>
             <div className="social-links">

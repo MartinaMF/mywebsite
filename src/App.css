@@ -1,21 +1,15 @@
-html {
 
-}
-body, h1, h2, h3, h4, h5, h6 {
-    font-family: "Lato", sans-serif;
-}
-.nav-colored { background-color:#000; }
-.nav-transparent { background-color:transparent;}
+/*landing page css*/
 .blurimg{
   background:#000000;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 ;
   position: fixed;
-  left:0;
-  right: 0;
-  top:0;
-  height: 700px;
+  left:100px;
+  right:100px;
+  top:100px;
+  height: 520px;
   z-index: -1;
   filter: blur(5px);
   opacity: 0.5;
@@ -76,6 +70,13 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
   font-size: 5em;
   color:white;
 }
+/*projects page css*/
+.addnewbutton{
+  width:200px;
+  height: 60px;
+  color:white;
+  background-color: red;
+}
 .displayProjects{
   display:flex;
   justify-content: space-between;
@@ -83,7 +84,6 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
 /*contact page css*/
 .contact-body{
   margin:auto;
-  position: fixed;
   width:100%;
   height: 100%;
   justify-content: center;
@@ -92,7 +92,6 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
 .contact-grid{
   text-align: center;
   justify-content: center;
-  background: white;
   width: 80%;
   height: 550px;
   color: black;
@@ -116,8 +115,45 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
 }
 
 /*Resume page css*/
-.resume-right-col{
-  padding:50px;
-  border-radius:50px;
+
+.resumegrid{
+
+}
+.adress{
+  display:flex;
+justify-content: space-around;
+}
+
+.backgroundcolor{
+
+}
+.skills{
+
+}
+/*certification page css*/
+.certifydisplay{
+  color:black;
+}
+.certifydisplay a{
+  text-decoration: none;
   color:white;
+  font-size: 20px;
+  font-family: 'KoHo', sans-serif;
+  font-weight:200;
+}
+.certifydisplay p{
+  font-size: 20px;
+  color:black;
+  font-family: 'Anton' sans-serif;
+}
+@media screen and (min-width: 480px) {
+  .projectcard h5,p{
+    font-size: 14px;
+  }
+  .projectcard p{
+    font-size: 12px;
+  }
+}
+@media screen and(min-width: ){
+
 }

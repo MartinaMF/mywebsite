@@ -13,7 +13,6 @@ class App extends Component {
         <Header transparent  id="mainheader"  className="header-color" style={{color: 'red',position:'fixed'}} title={<Link style={{textDecoration:'none',color:'white'}} to="/">My Portfolio</Link>} scroll>
             <Navigation>
                 <Link to="/resume">Resume</Link>
-                <Link to="/aboutme">About me</Link>
                 <Link to="/projects">Projects</Link>
                 <Link to="/contact">Contact me</Link>
             </Navigation>
