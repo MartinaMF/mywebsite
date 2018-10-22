@@ -27,7 +27,88 @@ import {Dialog,DialogTitle,DialogContent,DialogActions,Textfield} from 'react-md
       let JQuaryProjects = JSON.parse(localStorage.getItem('JQuaryProjects')) || [];
       this.setState({ReactProjects,JavaScriptProjects,JQuaryProjects});
     }
-   toggleCategories() {
+    toggleCategories() {
+      if(this.state.activeTap ===0){
+        return(<div className="displayProjects">
+        <Projectdetails
+        projectName='TimeStamp'
+        githubLink='https://github.com/MartinaMF/TimeStamp'
+        codepenLink='#'
+        LivedemoLink='https://martinatimestamp.herokuapp.com/'
+        backgroundImage=''
+        />
+        <Projectdetails
+        projectName='Request Header'
+        githubLink='https://github.com/MartinaMF/request-header'
+        codepenLink='#'
+        LivedemoLink='#'
+        backgroundImage=''
+        />
+        <Projectdetails
+        projectName='url-shortener'
+        githubLink='https://github.com/MartinaMF/url-shortener'
+        codepenLink=''
+        LivedemoLink=''
+        backgroundImage=''
+        />
+        </div>
+      );
+      }
+      else if(this.state.activeTap ===1){
+        return(<div className="displayProjects">
+        <Projectdetails
+        projectName='Tic-tac-toe Game'
+        githubLink=''
+        codepenLink='https://codepen.io/MartinaMF/pen/LjNdNN'
+        LivedemoLink='#'
+        backgroundImage=''
+        />
+        <Projectdetails
+        projectName='POMODORO CLOCK'
+        githubLink=''
+        codepenLink='https://codepen.io/MartinaMF/pen/dzPbMR'
+        LivedemoLink='#'
+        backgroundImage=''
+        />
+        <Projectdetails
+        projectName='Simon Game'
+        githubLink=''
+        codepenLink='https://codepen.io/MartinaMF/pen/EvQdYZ'
+        LivedemoLink='#'
+        backgroundImage=''
+        />
+        </div>
+      );
+      }
+      else if(this.state.activeTap ===2){
+        return(<div className="displayProjects">
+        <Projectdetails
+        projectName='recipe Box'
+        githubLink='https://github.com/MartinaMF/recipeBox'
+        codepenLink='#'
+        LivedemoLink='#'
+        backgroundImage=''
+        />
+        <Projectdetails
+        projectName='Game of life'
+        githubLink='https://github.com/MartinaMF/game-of-life'
+        codepenLink='#'
+        LivedemoLink='#'
+        backgroundImage=''
+        />
+        <Projectdetails
+        projectName='CamperLeaderboard'
+        githubLink='https://github.com/MartinaMF/CamperLeaderboard'
+        codepenLink='https://codepen.io/MartinaMF/pen/RVdvjz'
+        LivedemoLink='#'
+        backgroundImage=''
+        />
+        </div>
+      );
+      }
+
+    }
+   DynamictoggleCategories() {
      if(this.state.activeTap ===0){
        if(this.state.JQuaryProjects.length>=1){
          const projects = this.state.JQuaryProjects.map((item,i)=>
