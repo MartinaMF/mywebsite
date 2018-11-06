@@ -30,26 +30,11 @@ import {Dialog,DialogTitle,DialogContent,DialogActions,Textfield} from 'react-md
     toggleCategories() {
       if(this.state.activeTap ===0){
         return(<div className="displayProjects">
+
         <Projectdetails
-        projectName='TimeStamp'
-        githubLink='https://github.com/MartinaMF/TimeStamp'
-        codepenLink='#'
-        LivedemoLink='https://martinatimestamp.herokuapp.com/'
-        backgroundImage=''
-        />
-        <Projectdetails
-        projectName='Request Header'
-        githubLink='https://github.com/MartinaMF/request-header'
-        codepenLink='#'
-        LivedemoLink='#'
-        backgroundImage=''
-        />
-        <Projectdetails
-        projectName='url-shortener'
-        githubLink='https://github.com/MartinaMF/url-shortener'
-        codepenLink=''
-        LivedemoLink=''
-        backgroundImage=''
+        projectName='Awesome design'
+        projectLink='https://github.com/MartinaMF/awesom'
+        projectDescription='modern fully responsive web design have been buit using pure CSS3 HTML5 and Awesome DOM minupulation using pure JAVASCRIPT'
         />
         </div>
       );
@@ -57,11 +42,14 @@ import {Dialog,DialogTitle,DialogContent,DialogActions,Textfield} from 'react-md
       else if(this.state.activeTap ===1){
         return(<div className="displayProjects">
         <Projectdetails
+        projectName='TimeStamp'
+        projectLink='https://github.com/MartinaMF/TimeStamp'
+        projectDescription='an Api project have built using react converts time to'
+        />
+        <Projectdetails
         projectName='Tic-tac-toe Game'
-        githubLink=''
         codepenLink='https://codepen.io/MartinaMF/pen/LjNdNN'
-        LivedemoLink='#'
-        backgroundImage=''
+        projectDescription='a javascript Tic-tac-toe game'
         />
         <Projectdetails
         projectName='POMODORO CLOCK'
@@ -193,7 +181,7 @@ import {Dialog,DialogTitle,DialogContent,DialogActions,Textfield} from 'react-md
      return(
        <div className="tabs">
        <Tabs activeTap={this.state.activeTap} onChange={(tabId)=> this.setState({activeTap:tabId})}>
-       <Tab>API projects</Tab>
+       <Tab>respnsive HTML5/CSS3 designs </Tab>
        <Tab>javascript/jQuary projects</Tab>
        <Tab>react projects</Tab>
        </Tabs>

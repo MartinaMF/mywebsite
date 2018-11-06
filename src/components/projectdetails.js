@@ -5,12 +5,10 @@ function Projectdetails (props){
     <Card className="projectcard" shadow={0} style={{width: '20%', height: '25%', margin: 'auto'}}>
  <CardTitle expand style={{backgroundImage:props => `url(${props.backgroundImage})`,backgroundSize:'cover',backgroundPosition: 'center'}}><h5>{props.projectName}</h5></CardTitle>
  <CardText>
-    <p>{props.projectName}</p>
+    <p>{props.projectDescription}</p>
  </CardText>
  <CardActions border>
-     <a colored href={props.githubLink} target="_blank" colored><Button colored>github</Button></a>
-      <a colored href={props.codepenLink} target="_blank" colored><Button colored>codepen</Button></a>
-      <a colored href={props.LivedemoLink} target="_blank" colored><Button colored>live demo</Button></a>
+     <a colored href={props.projectLink} target="_blank" colored><Button colored>show project</Button></a>
  </CardActions>
  </Card>
   );

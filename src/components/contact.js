@@ -7,9 +7,13 @@ import {Grid,Cell,List,ListItem,ListItemContent} from 'react-mdl';
           <Grid className="contact-grid">
           <Cell col={6}>
           <h1>Martina Faragalla</h1>
-          
-           <p style={{width:'75%', margin:'auto',paddingTop:'1em'}}>
-           I have developed web-based applications from design to coding and full implementation.I have a Bachelor’s Degree in Information Technology and I am committed to staying up-to-date with all technological advancements.
+
+           <p style={{width:'75%', margin:'auto',paddingTop:'1em', color:'black'}}>
+           front-end web Developer with a solid knowldge of back-end development.
+           have  passion for web application development . Skilled in conceptualizing,
+            development and logical solutions to business problems. Dedicated to driving
+            innovation with the ability
+            to follow industry and technological trends.
            </p>
           </Cell>
           <Cell col={6}>
